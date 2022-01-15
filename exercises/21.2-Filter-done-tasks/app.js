@@ -10,3 +10,9 @@ let tasks = [
 ];
 
 //your code here
+
+let taskdone = tasks.filter(function(state){
+	return (state.done == true)
+})
+
+console.log(taskdone);

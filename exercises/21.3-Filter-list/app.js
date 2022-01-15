@@ -2,4 +2,22 @@ let names = ['Liam','Emma','Noah','Olivia','William','Ava','James','Isabella','L
 
 //declare your function here
 
+let filterByName = function(names,b){
+    let namesnew = []
+    for (let i = 0; i<names.length; i++) {
+        let name = names[i].toLowerCase()
+        if (name.includes(b)) {
+            namesnew.push(name)
+        }
+    }
+    return namesnew
+}
+
+
 console.log(filterByName(names, 'am'));
+
+
+//let filterByName = names.filter(function(name){
+    //return name.includes('am')
+//})
+//console.log(filterByName);
